@@ -1,5 +1,5 @@
 import React from 'react';
-
+import awardimage from '../components/award.png';
 const Awards = () => {
     const awards = [
         {
@@ -44,19 +44,21 @@ const Awards = () => {
           organisation: 'For Inspiration and Recognition of Science and Technology (FIRST)',
           ref: '[72]'
         },
-        // Add more awards here
+       
       ];
       return (
         <div>
-          <div className="text-center font-bold text-4xl my-4 mx-auto" id='awards'>Awards</div>
+          <div className="text-center font-bold text-4xl my-4 mx-auto py-40" id='awards'>Awards</div>
           <div className="flex flex-wrap justify-center">
             {awards.map((award, index) => (
               <div key={index}className="max-w-xs mx-2 my-4 bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
                 <div className="px-6 py-4">
-                  <div className="font-bold text-xl mb-2">{award.name}</div>
-                  <p className="text-gray-700 text-base">{award.organisation}</p>
-                  <p className="text-gray-600 text-sm">{award.year}</p>
-                </div>
+                <img src={awardimage} alt={award.name} className="mb-4" style={{ height: '100px' }} />
+                       <div className="font-bold text-xl mb-2">{award.name}</div>
+                          <p className="text-gray-700 text-base">{award.organisation}</p>
+                      <p className="text-gray-600 text-sm">{award.year}</p>
+                          </div>
+
                 <div className="px-6 py-4">
                   <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
                     {award.ref}

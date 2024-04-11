@@ -3,7 +3,7 @@ import Tata from '../components/tata.png'
 
 const Main = () => {
   return (
-    <div className='w-full bg-white py-16 px-4' id='main'>
+    <div className='w-full bg-white py-40 px-4' id='main'>
       <div className='max-w-[1240px] mx-auto grid md:grid-cols-2 items-center'>
       <img className='w-48 md:w-[300px] mx-auto my-4 md:ml-0' src={Tata} alt='Ratan Tata' />
 

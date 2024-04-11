@@ -2,7 +2,7 @@ import React from 'react'
 
 const Honours = () => {
     return (
-        <div className='w-full bg-white  py-16 px-4' id='honours'>
+        <div className='w-full bg-white  py-32 px-4' id='honours'>
           <div className='max-w-[1240px] mx-auto grid md:grid-cols-2 items-center'>
           <img className='w-48 md:w-[300px] lg:w-[400px] mx-auto my-4 block' src={'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/The_President%2C_Smt._Pratibha_Devisingh_Patil_presenting_the_Padma_Vibhushan_to_Shri_Ratan_Naval_Tata_at_Civil_Investiture-II_Ceremony%2C_at_Rashtrapati_Bhavan%2C_in_New_Delhi_on_May_10%2C_2008.jpg/330px-thumbnail.jpg'} alt='Ratan Tata' />
 

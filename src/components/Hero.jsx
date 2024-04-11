@@ -6,8 +6,8 @@ const Hero = () => {
   const [quote] = useState("I don't believe in taking right decisions. I take decisions and then make them right - Ratan Tata");
 
   return (
-    <div className="flex flex-col lg:flex-row justify-between items-center py-25 lg:py-15" id='hero'>
-      <div className="lg:w-1/2 p-4 text-center">
+    <div className="flex flex-col lg:flex-row justify-between items-center py-25 lg:mt-[100px] sm:mt-1" id='hero'>
+     <div className="lg:w-1/2 p-4 text-center mt-40 lg:mt-20">
         <div className="mb-2">
           <h1 className="text-2xl lg:text-4xl font-bold">
             A Legend to remember
@@ -23,7 +23,7 @@ const Hero = () => {
                to="main"
                  spy={true}
                  smooth={true}
-                 offset={-70} // Adjust the offset as needed
+                 offset={-70} 
                  duration={500}
                  className="bg-black text-white py-2 px-4 rounded hover:bg-gray-500 transition duration-300"
                   >

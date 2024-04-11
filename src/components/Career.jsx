@@ -3,7 +3,7 @@ import React from 'react';
 
 const Career = () => {
   return (
-    <div className='w-full  py-16 px-4' id='career'>
+    <div className='w-full  py-40 px-4' id='career'>
       <div className='max-w-[1240px] mx-auto grid md:grid-cols-2 items-center'>
         <div className='text-center md:text-left p-4'>
           <p className='text-[#00df9a] font-bold'>RATAN TATA</p>

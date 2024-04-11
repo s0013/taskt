@@ -10,10 +10,9 @@ const Navbar = () => {
   };
 
   return (
-    <div className={` flex justify-center items-center h-24 max-w-[1240px] mx-auto px-4 text-black  ${nav ? 'bg-black bg-opacity-75 left-0 right-0 w-full' : ''}`}>
-
-      <h1 className='w-full text-3xl font-bold text-black '>TRIBUTE SITE</h1>
-      <ul className='hidden md:flex'>
+    <div  className={`flex justify-between items-center h-24 text-white ${nav ? 'bg-black bg-opacity-75' : 'bg-black bg-opacity-50'} fixed w-full top-0 z-0`}>
+      <h1 className='w-full text-3xl font-bold text-white mx-5 '>TRIBUTE SITE</h1>
+      <ul className='hidden md:flex mr-5'>
         <li className="hover:text-gray-300 cursor-pointer p-4"><Link to="hero" spy={true} smooth={true} offset={50} duration={500}>Home</Link></li>
         <li className="hover:text-gray-300 cursor-pointer p-4"><Link to="main" spy={true} smooth={true} offset={50} duration={500}>Intro</Link></li>
         <li className="hover:text-gray-300 cursor-pointer p-4"><Link to="career" spy={true} smooth={true} offset={50} duration={500}>Career</Link></li>
