@@ -5,3 +5,92 @@
 body{
   background-color: bisque;
 }
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in-right {
+  animation: slideInFromRight 0.5s ease-out forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.animate-slide-in-left {
+  animation: slideInFromLeft 0.5s ease-out forwards;
+}
+/* Zoom-out transition */
+@keyframes zoomOut {
+  0% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Apply a slight zoom-in initially */
+.img-zoom-out {
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.2);
+}
+
+/* Define the hover effect to zoom out to normal size */
+.img-zoom-out:hover {
+  animation: zoomOut 0.5s ease-out forwards;
+}
+@keyframes glowing {
+  0% {
+    border-color: #f6d365;
+    box-shadow: 0 0 10px #f6d365;
+  }
+  50% {
+    border-color: #fda085;
+    box-shadow: 0 0 20px #fda085;
+  }
+  100% {
+    border-color: #f6d365;
+    box-shadow: 0 0 10px #f6d365;
+  }
+}
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pop {
+  animation-name: pop;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+}

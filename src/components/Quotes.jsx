@@ -13,12 +13,13 @@ const Quotes = () => {
 
   ];
   return (
-    <div className="container mx-auto bg-white" id='quotes'>
+    <div className="container mx-auto bg-white" id="quotes">
       <p className="text-2xl font-bold mt-8 text-center">{title}</p>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-8">
         {quotes.map((quote, index) => (
-          <div key={index} className="p-4">
-            <div className="bg-gray-100 shadow-md rounded-lg p-4">
+          <div key={index} className="p-4 relative">
+            <div className="glow-border absolute inset-0 border-4 rounded-lg animate-glowing"></div>
+            <div className="bg-gray-100 shadow-md rounded-lg p-4 transform transition-transform hover:scale-105">
               <p className="text-lg font-medium">{quote.text}</p>
               <p className="text-sm text-gray-600 mt-2">- {quote.author}</p>
             </div>
@@ -27,6 +28,7 @@ const Quotes = () => {
       </div>
     </div>
   );
+  
 };
 
 export default Quotes;
